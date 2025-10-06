@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gabe's 18th Birthday Bash!</title>
   <style>
     body {
@@ -9,43 +10,83 @@
       background: #fff6e5;
       margin: 0;
       padding: 0;
+      line-height: 1.6;
     }
+
     header {
       background-color: #ff6f61;
       color: white;
       padding: 20px;
       text-align: center;
     }
-    
-    
+
     section {
       padding: 20px;
-      border-radius: 10px;
-      
     }
-    img {
+
+    article {
+      margin-bottom: 30px;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    img, iframe {
       max-width: 100%;
       height: auto;
       border-radius: 10px;
     }
-    article {
-      margin-bottom: 20px;
+
+    ul {
+      padding-left: 20px;
     }
+
     footer {
       background-color: #333;
       color: white;
       text-align: center;
-      padding: 10px;
+      padding: 15px;
     }
-    .map {
-      width: 100%;
-      height: 300px;
-      border: 0;
-      border-radius: 10px;
+
+    hr {
+      margin: 20px 0;
+      border: none;
+      border-top: 1px solid #ccc;
     }
-    
-    hr{
-    margin: 20px;}
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header, section, footer {
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      iframe {
+        height: 250px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.3rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      iframe {
+        height: 200px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -53,53 +94,31 @@
   <header>
     <h1>You're Invited to Sean Gabriel's 17th Birthday Bash!</h1>
   </header>
+
   <section>
+
     <article>
       <h2>🎂 Event Details</h2>
       <p><strong>Date:</strong> Saturday, October 7, 2025</p>
       <p><strong>Time:</strong> 4:00 PM - 10:00 PM</p>
-      <p><strong>Place:</strong></p>
+      <p><strong>Place:</strong> Universal Studios Japan</p>
     </article>
+
     <hr>
 
-    <article>
-      <div itemscope itemtype="https://schema.org/Event">
-  <meta itemprop="name" content="Evening Celebration" />
-  <meta itemprop="startDate" content="2025-10-06T16:00" />
-  <meta itemprop="endDate" content="2025-10-06T22:00" />
-  
-  <h2 itemprop="name">Evening Celebration</h2>
-  <p><strong>Start Time:</strong> <time itemprop="startDate" datetime="2025-10-06T16:00">4:00 PM</time></p>
+    <article itemscope itemtype="https://schema.org/Event">
+      <meta itemprop="name" content="Sean Gabriel's 17th Birthday Bash" />
+      <meta itemprop="startDate" content="2025-10-07T16:00" />
+      <meta itemprop="endDate" content="2025-10-07T22:00" />
 
-  <div itemprop="subEvent" itemscope itemtype="https://schema.org/Event">
-    <meta itemprop="name" content="Surprising Gab" />
-    <meta itemprop="startDate" content="2025-10-06T16:20" />
-    <meta itemprop="endDate" content="2025-10-06T16:40" />
-    <p><strong>4:20 PM – 4:40 PM:</strong> <span itemprop="name">Surprising Gab</span></p>
-  </div>
+      <h2>🕒 Schedule</h2>
 
-  <div itemprop="subEvent" itemscope itemtype="https://schema.org/Event">
-    <meta itemprop="name" content="Gameshow Event" />
-    <meta itemprop="startDate" content="2025-10-06T17:00" />
-    <meta itemprop="endDate" content="2025-10-06T18:00" />
-    <p><strong>5:00 PM – 6:00 PM:</strong> <span itemprop="name">Gameshow Event</span></p>
-  </div>
-
-  <div itemprop="subEvent" itemscope itemtype="https://schema.org/Event">
-    <meta itemprop="name" content="Danceoff" />
-    <meta itemprop="startDate" content="2025-10-06T18:00" />
-    <meta itemprop="endDate" content="2025-10-06T19:00" />
-    <p><strong>6:00 PM – 7:00 PM:</strong> <span itemprop="name">Danceoff</span></p>
-  </div>
-
-  <div itemprop="subEvent" itemscope itemtype="https://schema.org/Event">
-    <meta itemprop="name" content="Dinner" />
-    <meta itemprop="startDate" content="2025-10-06T19:00" />
-    <meta itemprop="endDate" content="2025-10-06T22:00" />
-    <p><strong>7:00 PM – 10:00 PM:</strong> <span itemprop="name">Dinner</span></p>
-  </div>
-</div>
+      <p><strong>4:20 PM – 4:40 PM:</strong> <span itemprop="subEvent">Surprising Gab</span></p>
+      <p><strong>5:00 PM – 6:00 PM:</strong> <span itemprop="subEvent">Gameshow Event</span></p>
+      <p><strong>6:00 PM – 7:00 PM:</strong> <span itemprop="subEvent">Danceoff</span></p>
+      <p><strong>7:00 PM – 10:00 PM:</strong> <span itemprop="subEvent">Dinner</span></p>
     </article>
+
     <hr>
 
     <article>
@@ -110,31 +129,43 @@
         <li>Comfortable shoes for dancing</li>
       </ul>
     </article>
+
     <hr>
 
     <article>
-      <h2>📍 Start Map Location</h2>
-   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.5654084256216!2d135.432318521539!3d34.665676841010765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0d083d5e25d%3A0x3605fe25303252aa!2sUniversal%20Studios%20Japan!5e0!3m2!1sen!2sph!4v1759762971338!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" 
-   loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>📍 Map Location</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.5654084256216!2d135.432318521539!3d34.665676841010765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0d083d5e25d%3A0x3605fe25303252aa!2sUniversal%20Studios%20Japan!5e0!3m2!1sen!2sph!4v1759762971338!5m2!1sen!2sph" 
+        width="600" 
+        height="350" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </article>
+
     <hr>
 
     <article>
       <h2>📬 RSVP</h2>
-      <p>Please confirm your attendance by October 3rd.</p>
-      <p itemprop="Email">Email: <a href="mailto:gabrielbirthday2025@email.com">gabrielbirthday2025@email.com</a></p>
+      <p>Please confirm your attendance by <strong>October 3rd</strong>.</p>
+      <p>Email: <a href="mailto:gabrielbirthday2025@email.com">gabrielbirthday2025@email.com</a></p>
     </article>
+
     <hr>
 
     <article>
-      <h2 itemprop="Phone">📞 Contact Person</h2>
-      <p itemprop="Name">Name: Sean Gabriel</p>
-      <p>If you have questions about this whole party--->Phone: +63 912 345 6789</p>
+      <h2>📞 Contact</h2>
+      <p><strong>Name:</strong> Sean Gabriel</p>
+      <p><strong>Phone:</strong> <a href="tel:+639123456789">+63 912 345 6789</a></p>
+      <p>If you have questions about the party, feel free to reach out!</p>
     </article>
+
   </section>
 
   <footer>
-    <p>&copy; LOLOLOLOLOLLOLOLOL bakit ko to icocopyright.</p>
+    <p>&copy; LOLOLOLOLOL bakit ko to icocopyright.</p>
   </footer>
 
 </body>
